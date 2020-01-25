@@ -1,5 +1,7 @@
 # xkcd command line tool
 
+![working gif](https://raw.githubusercontent.com/anirudhajith/xkcd/master//xkcd.gif)
+
 ## Usage:
 
 Brings up the latest xkcd comic:
