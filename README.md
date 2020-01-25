@@ -14,5 +14,5 @@ Brings up xkcd comic #COMIC_INDEX:
 * `feh`
 
 ## Recommended usage:
-* `PATH=$PATH:/path/to/folder` to `~/.bashrc`
+* Append `PATH=$PATH:/path/to/folder` to `~/.bashrc`
 * Use command `xkcd` or `xkcd COMIC_INDEX` from anywhere in your filesystem to bring up the comic.
