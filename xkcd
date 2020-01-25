@@ -1,0 +1,21 @@
+if [ -z $1 ]; then
+    curl -s https://xkcd.com/ > html
+else
+    curl -s https://xkcd.com/$1/ > html
+fi;
+
+if [ 0 -eq $? ]; then
+    img_tag=$(cat html | grep "<img src=\"//imgs.xkcd.com/comics/")
+    img_url=http:$(echo $img_tag | cut -d'"' -f2)
+    img_title=$(echo $img_tag | cut -d'"' -f4)
+    img_alt=$(echo $img_tag | cut -d'"' -f6)
+
+    wget -q --output-document=img.png $img_url
+    echo "Title: $img_alt"
+    echo "Subtext: $img_title"
+    feh -x img.png
+else
+    echo "Failed to connect. Please check your internet connection."
+fi;
+
+rm html img.png
