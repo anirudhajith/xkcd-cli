@@ -1,6 +1,6 @@
 # xkcd command line tool
 
-![working gif](https://raw.githubusercontent.com/anirudhajith/xkcd/master//xkcd.gif)
+![working gif](https://raw.githubusercontent.com/anirudhajith/xkcd-cli/master//xkcd.gif)
 
 ## Usage:
 
